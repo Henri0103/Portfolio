@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prénom Nom - Étudiant MIAGE</title>
+    <link rel="stylesheet" href="c:\Users\PC MARKET CI\Desktop\KOUAME KOMENAN HENRI\CSS Portfolio KHK.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>KOMENAN HENRI KOUAME</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Étudiant en <span class="highlight">MIAGE</span></h1>
+                <h2>Développement & Management des Systèmes d'Information</h2>
+                <p>Je transforme les besoins métier en solutions informatiques efficaces</p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-tie"></i>
+                    <!-- Remplace par ta photo -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">Mes Projets MIAGE</h2>
+            <div class="projets-grid">
+                
+                <!-- Projet 1 - Technique -->
+                <article class="projet-card" data-category="technique">
+                    <div class="projet-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="projet-content">
+                        <h3>Application de Gestion des Stocks</h3>
+                        <div class="projet-meta">
+                            <span class="projet-duree">3 mois</span>
+                            <span class="projet-role">Développeur Full-Stack</span>
+                        </div>
+                        <p class="projet-description">
+                            Développement d'une solution complète de gestion de stock avec interface intuitive.
+                        </p>
+                        <div class="projet-technologies">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Swing</span>
+                            <span class="tech-tag">UML</span>
+                        </div>
+                        <div class="projet-actions">
+                            <button class="btn-details" onclick="openModal('modal-projet1')">Voir les détails</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2 - Analyse -->
+                <article class="projet-card" data-category="analyse">
+                    <div class="projet-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="projet-content">
+                        <h3>Optimisation Processus Achat</h3>
+                        <div class="projet-meta">
+                            <span class="projet-duree">2 mois</span>
+                            <span class="projet-role">Analyste Fonctionnel</span>
+                        </div>
+                        <p class="projet-description">
+                            Analyse et optimisation des processus d'achat avec modélisation des flux.
+                        </p>
+                        <div class="projet-technologies">
+                            <span class="tech-tag">MERISE</span>
+                            <span class="tech-tag">BPMN</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">UML</span>
+                        </div>
+                        <div class="projet-actions">
+                            <button class="btn-details" onclick="openModal('modal-projet2')">Voir les détails</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 3 - Web -->
+                <article class="projet-card" data-category="technique">
+                    <div class="projet-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="projet-content">
+                        <h3>Site E-commerce</h3>
+                        <div class="projet-meta">
+                            <span class="projet-duree">1 mois</span>
+                            <span class="projet-role">Développeur Web</span>
+                        </div>
+                        <p class="projet-description">
+                            Plateforme e-commerce avec gestion de panier et interface administrateur.
+                        </p>
+                        <div class="projet-technologies">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="projet-actions">
+                            <button class="btn-details" onclick="openModal('modal-projet3')">Voir les détails</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Filtres -->
+            <div class="projet-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="technique">Technique</button>
+                <button class="filter-btn" data-filter="analyse">Analyse</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+            <div class="apropos-content">
+                <div class="apropos-text">
+                    <div class="apropos-header">
+                        <div class="photo-profil">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                        </div>
+                        <div class="apropos-titre">
+                            <h3>Prénom NOM</h3>
+                            <p>Étudiant en Master MIAGE</p>
+                            <p>Université [Nom de ton université]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="apropos-description">
+                        <p>Passionné par la transformation digitale et la création de solutions informatiques qui répondent aux besoins métier des entreprises.</p>
+                        
+                        <h4>Mon Parcours</h4>
+                        <p>Actuellement en [Licence/Master] MIAGE, je me spécialise dans le développement d'applications métier et le management des systèmes d'information.</p>
+                        
+                        <h4>Projet Professionnel</h4>
+                        <p>Je recherche un stage/alternance dans le développement d'applications ou le consulting fonctionnel pour mettre en pratique mes compétences techniques et analytiques.</p>
+                    </div>
+                </div>
+                
+                <div class="competences">
+                    <!-- Compétences Techniques -->
+                    <div class="competence-categorie">
+                        <h4><i class="fas fa-code"></i> Compétences Techniques</h4>
+                        <div class="competence-list">
+                            <div class="competence-item">
+                                <span>Java</span>
+                                <div class="competence-bar">
+                                    <div class="competence-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="competence-item">
+                                <span>Python</span>
+                                <div class="competence-bar">
+                                    <div class="competence-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="competence-item">
+                                <span>SQL/MySQL</span>
+                                <div class="competence-bar">
+                                    <div class="competence-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="competence-item">
+                                <span>HTML/CSS/JavaScript</span>
+                                <div class="competence-bar">
+                                    <div class="competence-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="competence-item">
+                                <span>UML/MERISE</span>
+                                <div class="competence-bar">
+                                    <div class="competence-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Compétences Métier -->
+                    <div class="competence-categorie">
+                        <h4><i class="fas fa-briefcase"></i> Compétences Métier</h4>
+                        <div class="competence-tags">
+                            <span class="competence-tag">Analyse des besoins</span>
+                            <span class="competence-tag">Gestion de projet</span>
+                            <span class="competence-tag">Modélisation de processus</span>
+                            <span class="competence-tag">Conduite du changement</span>
+                            <span class="competence-tag">Spécifications fonctionnelles</span>
+                            <span class="competence-tag">Optimisation SI</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Outils -->
+                    <div class="competence-categorie">
+                        <h4><i class="fas fa-tools"></i> Outils</h4>
+                        <div class="outils-list">
+                            <div class="outil-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="outil-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL Workbench</span>
+                            </div>
+                            <div class="outil-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>StarUML</span>
+                            </div>
+                            <div class="outil-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>N'hésitez pas à me contacter pour discuter de projets, stages ou opportunités.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>prenom.nom@etu.univ-nantes.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Localisation</strong>
+                                <p>Nantes, France</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>linkedin.com/in/prenom-nom</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>github.com/prenom-nom</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="assets/documents/cv.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        Télécharger mon CV
+                    </a>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Prénom NOM - Étudiant MIAGE. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals pour les projets -->
+    <div id="modal-projet1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-projet1')">&times;</span>
+            <h2>Application de Gestion des Stocks</h2>
+            <div class="modal-body">
+                <!-- Contenu détaillé du projet -->
+                <p>Étude de cas complète à ajouter ici...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="c:\Users\PC MARKET CI\Desktop\KOUAME KOMENAN HENRI\JavaScript Portfolio KHK.js"></script>
+</body>
+</html>
